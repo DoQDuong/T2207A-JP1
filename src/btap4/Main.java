@@ -17,37 +17,15 @@ public class Main {
 //         System.out.println("hhh"+cars[i].getBrand());
 //     }=
 
-        Sinhvien a = new Sinhvien("HOANG",2004,"vp","t2207",9,"gioi");
+        Sinhvien a = new Sinhvien("Duong",2004,"Hà Tây","t2207",9,"gioi");
         a.nhap();
 
         a.hienthi();
-//        System.out.println("Xếp loại SV là: ");
-//        a.getSeploai();
-//        System.out.println("Họ tên sinh viên :");
-//
-//        System.out.println(a.getName());
-//        System.out.println("Năm sinh viên :");
-//
-//        System.out.println(a.getDate());
-//        System.out.println("Nơi ở sinh viên :");
-//
-//        System.out.println(a.getAdress());
-//        System.out.println("Lớp họ sinh viên :");
-//
-//        System.out.println(a.getClasss());
-//        System.out.println("Điểm TB sinh viên :");
-//
-//        System.out.println(a.getMedium());
-
-
 
         Sinhvien[] cars =new Sinhvien[3];
         for (int i=0;i< cars.length;i++){
-            cars[i] = new Sinhvien("HOANG",2004,"vp","t2207",9,"gioi");
+            cars[i] = new Sinhvien("Duong",2004,"Hà Tây","t2207",9,"gioi");
             cars[i].nhap();
-
-
-
 
 
         }
@@ -70,9 +48,9 @@ public class Main {
 
 
         }
-        Sinhvien max = new Sinhvien("HOANG",2004,"vp","t2207",9,"gioi");
+        Sinhvien max = new Sinhvien("Duong",2004,"HT","t2207",9,"gioi");
         max = cars[0];
-        Sinhvien min = new Sinhvien("HOANG",2004,"vp","t2207",9,"gioi");
+        Sinhvien min = new Sinhvien("Duong",2004,"HT","t2207",9,"gioi");
         min = cars[0];
         for (int i=0;i< cars.length;i++) {
             if (cars[i].getMedium() > max.getMedium()) {
@@ -97,7 +75,7 @@ public class Main {
         System.out.println("Danh sách sinh viên suất sắc là: ");
         for (int i=0;i< cars.length;i++){
 
-            cars[i].svxuatsac();
+            cars[i].svsuatsac();
         }
 
 //           if (i == 0){
